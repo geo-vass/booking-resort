@@ -6,7 +6,7 @@ import { HiOutlineClock } from "react-icons/hi";
 
 const TopBar = () => {
   return (
-    <header className="flex justify-between items-center px-4 py-2">
+    <section className="flex justify-between items-center px-4 py-2">
       <div className="flex items-center gap-4">
         <FaUmbrellaBeach size={30} className="text-[var(--primary-dark)]" />
         <h1 className="text-xl font-bold text-gray-700">RESORT</h1>
@@ -22,7 +22,7 @@ const TopBar = () => {
         </div>
         <button>Book Now</button>
       </div>
-    </header>
+    </section>
   );
 };
 
