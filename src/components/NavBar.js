@@ -42,11 +42,11 @@ const NavBar = () => {
       <div
         className={`${
           nav ? " top-0 left-0 right-0 " : " top-0 left-[-100%] "
-        }   md:hidden flex bottom-0  ease-in duration-500  justify-center text-2xl overflow-hidden absolute   bg-black/90  text-gray-200 pt-10 z-10 `}
+        }   md:hidden flex bottom-0  ease-in duration-500  justify-center text-2xl overflow-hidden absolute   bg-black/90  text-gray-200 pt-10 z-50  `}
       >
         <MdClose
           size={50}
-          className="text-white cursor-pointer absolute right-3 top-0 text-[var(--primary-dark)] ease-in duration-300"
+          className="text-white cursor-pointer absolute right-3 top-0 text-[var(--primary-dark)] "
           onClick={() => setNav(false)}
         />
         <ul className="flex flex-col items-center just gap-10">

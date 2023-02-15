@@ -27,5 +27,8 @@
 
         @apply text-xl font-bold
     }
+    img {
+        @apply w-full h-full object-cover
+    }
     
 }
