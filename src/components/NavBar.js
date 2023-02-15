@@ -9,7 +9,7 @@ const NavBar = () => {
   return (
     <section className="flex justify-between w-full px-4 py-2 min-h-[50px] items-center bg-gray-700/80 text-white">
       {/* Main nav */}
-      <ul className="hidden sm:flex gap-5 ">
+      <ul className="hidden md:flex gap-5 ">
         <li>
           <a href="/">Home</a>
         </li>
@@ -41,8 +41,8 @@ const NavBar = () => {
       </div>
       <div
         className={`${
-          nav ? " top-0 left-0 " : " top-0 left-[-100%] "
-        }   md:hidden flex w-full h-full ease-in duration-500  justify-center text-2xl overflow-hidden absolute   bg-black/90  text-gray-200 pt-10`}
+          nav ? " top-0 left-0 right-0 " : " top-0 left-[-100%] "
+        }   md:hidden flex bottom-0  ease-in duration-500  justify-center text-2xl overflow-hidden absolute   bg-black/90  text-gray-200 pt-10 z-10 `}
       >
         <MdClose
           size={50}
