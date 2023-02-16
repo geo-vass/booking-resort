@@ -10,7 +10,7 @@ const Hero = () => {
           className="brightness-75"
         />
         <div className="max-w[1140px] h-full m-auto">
-          <div className="absolute top-[10%] max-w-[600px] left-0 right-0 p-4 mx-auto flex flex-col gap-3 text-white">
+          <div className="absolute top-[30%] max-w-[600px]  p-4 mx-auto flex flex-col gap-3 text-white">
             <h1 className="text-4xl font-bold">Enjoy your stay in Resort</h1>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipisicing elit.

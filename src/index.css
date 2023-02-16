@@ -21,7 +21,7 @@
 @layer components {
     
     button {
-        @apply px-4 py-2 border bg-gradient-to-r from-[var(--primary-dark)] to-[var(--primary-light)] text-white rounded-lg
+        @apply px-4 py-2 border bg-gradient-to-r bg-indigo-500 text-white rounded-lg
     }
     h2 {
 
@@ -29,6 +29,9 @@
     }
     img {
         @apply w-full h-full object-cover
+    }
+    select,input {
+        @apply rounded-md py-2 mt-2 focus:outline-none focus:border-sky-500
     }
     
 }
