@@ -2,12 +2,13 @@ import React from "react";
 
 const BookingForm = () => {
   return (
-    <section className="mt-4 p-4 max-w-[1140px] m-auto w-full md:flex">
+    <section className="mt-4 p-4 max-w-[1140px] m-auto w-full">
+      <h2 className="text-center mb-10">Book Now</h2>
       <form
         onSubmit={(e) => e.preventDefault()}
-        className="flex sm:flex-col md:flex-row justify-between gap-10 mx-auto w-full"
+        className="flex flex-col lg:flex-row gap-6 mx-auto w-full lg:items-center"
       >
-        <div className="flex flex-col min-w-[400px]">
+        <div className="flex flex-col min-w-[300px]">
           <label htmlFor="room">Available Rooms:</label>
           <select name="room" id="room">
             <option value="room#1">Room #1</option>
@@ -16,23 +17,18 @@ const BookingForm = () => {
             <option value="room#4">Room #4</option>
           </select>
         </div>
-        <div className="flex justify-center gap-10">
+        <div className="flex sm:flex-row flex-col justify-center gap-6">
           <div className="flex flex-col flex-1">
             <label htmlFor="checkin">Check-in:</label>
-            <input
-              type="date"
-              id="checkin"
-              placeholder="dd-mm-yyyy"
-              min="2017-04-01"
-            />
+            <input type="date" id="checkin" required />
           </div>
           <div className="flex flex-col flex-1">
             <label htmlFor="checkout">Check-out:</label>
-            <input type="date" id="checkin" />
+            <input type="date" id="checkin" required />
           </div>
         </div>
-        <div>
-          <button className="w-full">Pricing & Availability</button>
+        <div className="lg:self-end flex-1">
+          <button className="w-full p-[0.65rem]">Pricing & Availability</button>
         </div>
       </form>
     </section>
