@@ -20,7 +20,6 @@ const TopBar = () => {
           <BiPhoneCall size={20} className="text-[var(--primary-dark)]" />
           <p className="text-sm text-gray-700">(+30) 12456889</p>
         </div>
-        <button>Book Now</button>
       </div>
     </section>
   );

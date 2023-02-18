@@ -2,7 +2,10 @@ import React from "react";
 
 const BookingForm = () => {
   return (
-    <section className="mt-4 p-4 max-w-[1140px] m-auto w-full">
+    <section
+      id="deals"
+      className="mt-4 p-4 max-w-[1140px] m-auto w-full relative z-10"
+    >
       <h2 className="text-center mb-10">Book Now</h2>
       <form
         onSubmit={(e) => e.preventDefault()}
@@ -24,7 +27,7 @@ const BookingForm = () => {
           </div>
           <div className="flex flex-col flex-1">
             <label htmlFor="checkout">Check-out:</label>
-            <input type="date" id="checkin" required />
+            <input type="date" id="checkout" required />
           </div>
         </div>
         <div className="lg:self-end flex-1">

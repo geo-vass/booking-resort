@@ -2,7 +2,10 @@ import React from "react";
 
 const Gallery = () => {
   return (
-    <section id="gallery" className="mt-4 p-4 max-w-[1140px] m-auto w-full">
+    <section
+      id="gallery"
+      className="mt-4 p-4 max-w-[1140px] m-auto w-ful relative z-10"
+    >
       <h2 className="text-center mb-10">Gallery</h2>
       <div className="grid gap-4 md:grid-cols-5 ">
         <div className="md:col-span-3 col-span-2 row-span-2">

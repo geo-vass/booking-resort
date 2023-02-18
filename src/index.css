@@ -21,17 +21,20 @@
 @layer components {
     
     button {
-        @apply px-4 py-2 border bg-gradient-to-r bg-indigo-500 text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 hover:bg-indigo-700 h-[45px]
+        @apply px-4 py-2 border bg-gradient-to-r bg-indigo-700 text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 hover:bg-indigo-800 h-[45px] cursor-pointer border-none
     }
     h2 {
 
-        @apply text-xl font-bold
+        @apply text-2xl font-bold
     }
     img {
         @apply w-full h-full object-cover
     }
-    select,input {
+    select,input, textarea {
         @apply rounded-md p-2 mt-2  border-2 shadow-sm border-slate-300 placeholder-slate-400 focus:outline-none focus:border-indigo-500 focus:ring-indigo-500 h-[45px]
+    }
+    textarea {
+       @apply h-[100px]
     }
     
 }
