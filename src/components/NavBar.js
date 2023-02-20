@@ -25,13 +25,13 @@ const NavBar = () => {
       </ul>
       {/* Social Icons */}
       <div className="flex gap-5">
-        <a href="https://facebook.com">
+        <a href="https://facebook.com" target="_blank">
           <FaFacebookF size={20} />
         </a>
-        <a href="https://instagram.com">
+        <a href="https://instagram.com" target="_blank">
           <FaInstagram size={20} />
         </a>
-        <a href="https://twitter.com">
+        <a href="https://twitter.com" target="_blank">
           <FaTwitter size={20} />
         </a>
       </div>

@@ -18,9 +18,13 @@ const Hero = () => {
               optio numquam debitis pariatur sit, consequuntur rerum magnam.
               Rerum consequatur qui ex laboriosam!
             </p>
-            <button className="self-start h-[55px] w-[200px]">
-              <a href="#deals">Book Now</a>
-            </button>
+
+            <a
+              href="#deals"
+              className="border-2 text-center rounded-md p-4 text-xl font-bold w-[200px] hover:bg-gray-600 ease-in duration-300"
+            >
+              Book now
+            </a>
           </div>
         </div>
       </div>

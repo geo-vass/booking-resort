@@ -8,8 +8,10 @@ const TopBar = () => {
   return (
     <section className="flex justify-between items-center px-4 py-2">
       <div className="flex items-center gap-4">
-        <FaUmbrellaBeach size={30} className="text-[var(--primary-dark)]" />
-        <h1 className="text-xl font-bold text-gray-700">RESORT</h1>
+        <a href="/" className="flex gap-4">
+          <FaUmbrellaBeach size={30} className="text-[var(--primary-dark)]" />
+          <h1 className="text-xl font-bold text-gray-700">RESORT</h1>
+        </a>
       </div>
       <div className="flex gap-4">
         <div className="hidden md:flex items-center gap-1">
