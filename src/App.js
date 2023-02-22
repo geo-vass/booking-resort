@@ -2,11 +2,12 @@ import React from "react";
 import TopBar from "./components/TopBar";
 import NavBar from "./components/NavBar";
 import Hero from "./components/Hero";
-import Activities from "./components/Activities";
+import Rooms from "./components/Rooms";
 import BookingForm from "./components/BookingForm";
 import Gallery from "./components/Gallery";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
+import About from "./components/About";
 
 function App() {
   return (
@@ -17,7 +18,8 @@ function App() {
       </header>
       <main>
         <Hero />
-        <Activities />
+        <Rooms />
+        <About />
         <BookingForm />
         <Gallery />
         <Contact />
