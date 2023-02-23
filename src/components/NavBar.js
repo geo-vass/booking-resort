@@ -2,6 +2,7 @@ import React, { useState } from "react";
 
 import { FaInstagram, FaFacebookF, FaTwitter, FaBars } from "react-icons/fa";
 import { MdClose } from "react-icons/md";
+import { HashLink as Link } from "react-router-hash-link";
 
 const NavBar = () => {
   const [nav, setNav] = useState(false);
@@ -11,16 +12,16 @@ const NavBar = () => {
       {/* Main nav */}
       <ul className="hidden md:flex gap-5 ">
         <li>
-          <a href="/">Home</a>
+          <Link to="/">Home</Link>
         </li>
         <li>
-          <a href="#gallery">Gallery</a>
+          <Link to="/gallery">Gallery</Link>
         </li>
         <li>
-          <a href="#deals">Deals</a>
+          <Link to="/#rooms">Rooms</Link>
         </li>
         <li>
-          <a href="#contact">Contact</a>
+          <Link to="/contact">Contact</Link>
         </li>
       </ul>
       {/* Social Icons */}

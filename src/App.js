@@ -8,6 +8,8 @@ import Gallery from "./components/Gallery";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import About from "./components/About";
+import { Routes, Route, Link } from "react-router-dom";
+import Home from "./components/Home";
 
 function App() {
   return (
@@ -17,12 +19,11 @@ function App() {
         <NavBar />
       </header>
       <main>
-        <Hero />
-        <Rooms />
-        <About />
-        <BookingForm />
-        <Gallery />
-        <Contact />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/gallery" element={<Gallery />} />
+        </Routes>
       </main>
       <Footer />
     </div>

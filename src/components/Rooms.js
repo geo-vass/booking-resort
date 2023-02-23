@@ -3,7 +3,10 @@ import Room from "./Room";
 
 const Rooms = () => {
   return (
-    <section className="max-w-[1140px] m-auto w-full md:flex mt-[-20px] gap-4">
+    <section
+      id="rooms"
+      className="max-w-[1140px] m-auto w-full md:flex mt-[-20px] gap-4"
+    >
       <Room
         title="Superior Room with Sea View"
         img="https://images.unsplash.com/photo-1540518614846-7eded433c457?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=857&q=80"

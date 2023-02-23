@@ -39,7 +39,5 @@
     .description {
         @apply  text-gray-500 text-sm text-center  m-auto
     }
-    .room:hover > * {
-        @apply translate-y-[0%]
-    }
+    
 }
