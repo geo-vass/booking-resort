@@ -31,7 +31,7 @@ const BookingForm = () => {
           </div>
         </div>
         <div className="lg:self-end flex-1">
-          <button className="w-full p-[0.65rem]">Pricing & Availability</button>
+          <button className="w-full ">Pricing & Availability</button>
         </div>
       </form>
     </section>

@@ -21,7 +21,7 @@ const Hero = () => {
 
             <a
               href="#deals"
-              className="border-2 text-center rounded-md p-4 text-xl font-bold w-[200px] hover:bg-gray-600 ease-in duration-300"
+              className="border-2 text-center rounded-md p-4 text-xl font-bold w-48 hover:bg-gray-600 ease-in duration-300"
             >
               Book now
             </a>

@@ -10,6 +10,8 @@ import Footer from "./components/Footer";
 import About from "./components/About";
 import { Routes, Route, Link } from "react-router-dom";
 import Home from "./components/Home";
+import ScrollToTop from "./components/ScrollToTop";
+import RoomDetails from "./components/RoomDetails";
 
 function App() {
   return (
@@ -19,11 +21,14 @@ function App() {
         <NavBar />
       </header>
       <main>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="/gallery" element={<Gallery />} />
-        </Routes>
+        <ScrollToTop>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="/gallery" element={<Gallery />} />
+            <Route path="/rooms/:id" element={<RoomDetails />} />
+          </Routes>
+        </ScrollToTop>
       </main>
       <Footer />
     </div>
