@@ -1,17 +1,13 @@
 import React from "react";
 import TopBar from "./components/TopBar";
 import NavBar from "./components/NavBar";
-import Hero from "./components/Hero";
-import Rooms from "./components/Rooms";
-import BookingForm from "./components/BookingForm";
-import Gallery from "./components/Gallery";
-import Contact from "./components/Contact";
 import Footer from "./components/Footer";
-import About from "./components/About";
-import { Routes, Route, Link } from "react-router-dom";
-import Home from "./components/Home";
 import ScrollToTop from "./components/ScrollToTop";
-import RoomDetails from "./components/RoomDetails";
+import Gallery from "./pages/Gallery";
+import Contact from "./pages/Contact";
+import Home from "./pages/Home";
+import RoomDetails from "./pages/RoomDetails";
+import { Routes, Route, Link } from "react-router-dom";
 
 function App() {
   return (

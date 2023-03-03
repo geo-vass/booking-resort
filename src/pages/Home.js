@@ -1,8 +1,8 @@
 import React from "react";
-import About from "./About";
-import BookingForm from "./BookingForm";
-import Hero from "./Hero";
-import Rooms from "./Rooms";
+import About from "../components/About";
+import BookingForm from "../components/BookingForm";
+import Hero from "../components/Hero";
+import Rooms from "../components/Rooms";
 
 const Home = () => {
   return (
