@@ -3,14 +3,17 @@ import About from "../components/About";
 import BookingForm from "../components/BookingForm";
 import Hero from "../components/Hero";
 import Rooms from "../components/Rooms";
+import { useFetch } from "../hooks/useFetch";
 
 const Home = () => {
+  const rooms = useFetch();
+
   return (
     <div>
       <Hero />
-      <Rooms />
+      <Rooms rooms={rooms} />
       <About />
-      <BookingForm />
+      <BookingForm rooms={rooms} />
     </div>
   );
 };

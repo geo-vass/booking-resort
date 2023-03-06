@@ -1,11 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Room from "./Room";
-// import { rooms } from "../data";
-import { useFetch } from "../hooks/useFetch";
 
-const Rooms = () => {
-  const rooms = useFetch();
-
+const Rooms = ({ rooms }) => {
   return (
     <section
       id="rooms"

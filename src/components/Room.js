@@ -7,7 +7,7 @@ const Room = ({ id, title, img, guests, space, startingPrice }) => {
     <article className="relative  w-[90%] mx-auto cursor-pointer mb-4 overflow-hidden room">
       <Link to={`/rooms/${id}`}>
         <div className="text-white absolute z-10 bg-slate-900/40 text-center p-2">
-          <p>from {startingPrice} per night</p>
+          <p>from {startingPrice} € per night</p>
         </div>
         <div className="absolute  left-[50%] bottom-[0%] translate-x-[-50%]  z-10 bg-slate-900/40 p-2 w-full h-28 translate-y-[0%] ">
           <h3 className=" text-xl font-bold text-white text-center mb-2">
@@ -16,7 +16,7 @@ const Room = ({ id, title, img, guests, space, startingPrice }) => {
           <div className="flex gap-9 justify-center text-white">
             <div className="flex items-center gap-2">
               <BsFillPersonFill size={25} />
-              <span>{guests}</span>
+              <span>{guests} guests</span>
             </div>
             <div className="flex items-center gap-2">
               <BsArrowsFullscreen size={20} />
