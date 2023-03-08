@@ -10,19 +10,19 @@ const RoomDetails = () => {
   const { id } = useParams();
   const room = useFetch(id);
 
-  const { title, img, guests, bedroom, beds, space, startingPrice } = room;
-
+  const { title, guests, bedroom, beds, amenities, gallery } = room;
+  console.log({ amenities });
   return (
-    <section className="mt-4 p-4 max-w-[1140px] m-auto w-full  gap-2 relative z-10">
-      <h1 className="mb-2">{title}</h1>
-      <div className="flex  py-2 text-xl space-x-2">
+    <section className="p-4 max-w-[1140px] m-auto w-full  gap-2 relative z-10">
+      <h1 className="mb-2 px-4">{title}</h1>
+      <div className="flex  px-4 text-l space-x-2">
         <span>{guests} guests ·</span>
         <span>{bedroom} bedroom ·</span>
         <span>{beds} beds ·</span>
       </div>
 
-      <Gallery />
-      <Amenities />
+      <Gallery gallery={gallery} />
+      <Amenities amenities={amenities} />
       <BookingForm rooms={[{ ...room }]} />
     </section>
   );

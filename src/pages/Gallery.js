@@ -1,43 +1,24 @@
 import React from "react";
 
-const Gallery = () => {
+const Gallery = ({ gallery }) => {
   return (
     <section
       id="gallery"
-      className="mt-4 p-4 max-w-[1140px] m-auto w-ful relative z-10"
+      className="mt-2 p-4 max-w-[1140px] m-auto w-full relative z-10 "
     >
-      <h2 className="text-center mb-10">Gallery</h2>
-      <div className="grid gap-4 md:grid-cols-5 ">
-        <div className="md:col-span-3 col-span-2 row-span-2">
-          <img
-            src="https://images.unsplash.com/photo-1602002418816-5c0aeef426aa?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80"
-            alt="/"
-          />
+      <div className="grid gap-4 md:grid-cols-5 md:grid-rows-[150px_150px] ">
+        <div className="md:col-span-3 col-span-2 row-span-2  h-full">
+          <img className="rounded-md" src={gallery && gallery[0]} alt="/" />
         </div>
-        <div>
-          <img
-            src="https://images.unsplash.com/photo-1602002418816-5c0aeef426aa?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80"
-            alt="/"
-          />
-        </div>
-        <div>
-          <img
-            src="https://images.unsplash.com/photo-1602002418816-5c0aeef426aa?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80"
-            alt="/"
-          />
-        </div>
-        <div>
-          <img
-            src="https://images.unsplash.com/photo-1602002418816-5c0aeef426aa?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80"
-            alt="/"
-          />
-        </div>
-        <div>
-          <img
-            src="https://images.unsplash.com/photo-1602002418816-5c0aeef426aa?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80"
-            alt="/"
-          />
-        </div>
+        {gallery?.map((img, index) => {
+          if (index > 0 && index < 5) {
+            return (
+              <div className="h-full">
+                <img className="rounded-md" src={img} alt="/" />
+              </div>
+            );
+          }
+        })}
       </div>
     </section>
   );

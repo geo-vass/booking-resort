@@ -9,7 +9,27 @@
       "bedroom": "2",
       "beds": "2",
       "space": "60 sq.m.",
-      "startingPrice": "150"
+      "startingPrice": "150",
+      "amenities": [
+        "Air conditioning",
+        "Wifi",
+        "Beach access – Beachfront",
+        "Kitchen",
+        "Hair dryer",
+        "Shampoo",
+        "Hot water",
+        "Shower gel",
+        "Hangers",
+        "TV",
+        "Refrigerator"
+      ],
+      "gallery": [
+        "https://images.unsplash.com/photo-1540518614846-7eded433c457?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=857&q=80",
+        "https://images.unsplash.com/photo-1583847268964-b28dc8f51f92?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80",
+        "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=658&q=80",
+        "https://images.unsplash.com/photo-1586208958839-06c17cacdf08?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=665&q=80",
+        "https://images.unsplash.com/photo-1618220048045-10a6dbdf83e0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=580&q=80"
+      ]
     },
     {
       "id": 2,
@@ -19,7 +39,29 @@
       "bedroom": "1",
       "beds": "2",
       "space": "45 sq.m.",
-      "startingPrice": "120"
+      "startingPrice": "120",
+      "amenities": [
+        "Air conditioning",
+        "Wifi",
+        "Oven",
+        "Freezer",
+        "Toaster",
+        "Hair dryer",
+        "Shampoo",
+        "Hot water",
+        "Shower gel",
+        "Hangers",
+        "TV",
+        "Refrigerator",
+        "Hot water kettle"
+      ],
+      "gallery": [
+        "https://images.unsplash.com/flagged/photo-1573168710865-2e4c680d921a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
+        "https://images.unsplash.com/photo-1583847268964-b28dc8f51f92?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80",
+        "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=658&q=80",
+        "https://images.unsplash.com/photo-1586208958839-06c17cacdf08?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=665&q=80",
+        "https://images.unsplash.com/photo-1618220048045-10a6dbdf83e0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=580&q=80"
+      ]
     },
   
     {
@@ -30,7 +72,32 @@
       "bedroom": "1",
       "beds": "1",
       "space": "30 sq.m.",
-      "startingPrice": "100"
+      "startingPrice": "100",
+      "amenities": [
+        "Air conditioning",
+        "Wifi",
+        "Oven",
+        "Freezer",
+        "Toaster",
+        "Hair dryer",
+        "Shampoo",
+        "Hot water",
+        "Shower gel",
+        "Hangers",
+        "TV",
+        "Refrigerator",
+        "Hot water kettle",
+        "Private entrance",
+        "Outdoor furniture",
+        "Free parking on premises"
+      ],
+      "gallery": [
+        "https://images.unsplash.com/photo-1616594039964-ae9021a400a0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=580&q=80",
+        "https://images.unsplash.com/photo-1583847268964-b28dc8f51f92?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80",
+        "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=658&q=80",
+        "https://images.unsplash.com/photo-1586208958839-06c17cacdf08?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=665&q=80",
+        "https://images.unsplash.com/photo-1618220048045-10a6dbdf83e0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=580&q=80"
+      ]
     }
   ]
 }
