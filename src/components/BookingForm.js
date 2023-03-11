@@ -12,7 +12,7 @@ const BookingForm = ({ rooms, startingPrice }) => {
 
   useEffect(() => {
     if (rooms.length === 0) return;
-    console.log({ rooms });
+    // console.log({ rooms });
     setpricePerNight(rooms[0].startingPrice);
   }, [rooms]);
   const calculateStartPrice = () => {
@@ -47,7 +47,7 @@ const BookingForm = ({ rooms, startingPrice }) => {
 
   //calculate stay every time the interval (from, to dates) changes
   useEffect(() => {
-    console.log(interval);
+    // console.log(interval);
     const nights = calculateStay();
     setnights(nights);
   }, [interval]);
@@ -55,14 +55,24 @@ const BookingForm = ({ rooms, startingPrice }) => {
   return (
     <section
       id="deals"
-      className="mt-4 p-4 max-w-[1140px] m-auto w-full relative z-10 "
+      className="p-4 mb-auto z-10 border-2 rounded-lg shadow-md flex-1  w-full sticky top-[0%]"
     >
-      <h2 className="text-center mb-10">Book Now</h2>
+      <div className=" items-center  flex   gap-3 min-w-[200px]">
+        <strong>
+          {nights ? `Price for ${nights} nights:` : "Add dates for prices"}
+        </strong>
+        <p>
+          <span className="font-bold text-2xl">
+            {nights ? `${nights * pricePerNight} € total` : ""}
+          </span>
+        </p>
+      </div>
+      <p className="mb-6 text-sm text-gray-500">{pricePerNight} € per night </p>
       <form
         onSubmit={(e) => e.preventDefault()}
-        className="flex flex-col lg:flex-row gap-6 mx-auto w-full lg:items-center"
+        className="flex flex-col  gap-6 mx-auto w-full "
       >
-        <div className="flex flex-col min-w-[300px]">
+        <div className="flex flex-col ">
           <label htmlFor="room">Available Rooms:</label>
           <select
             name="room"
@@ -70,8 +80,10 @@ const BookingForm = ({ rooms, startingPrice }) => {
             ref={optionRef}
             onChange={calculateStartPrice}
           >
-            {rooms.map((room) => (
-              <option value={room.id}>{room.title}</option>
+            {rooms.map((room, index) => (
+              <option value={room.id} key={index}>
+                {room.title}
+              </option>
             ))}
           </select>
         </div>
@@ -100,21 +112,10 @@ const BookingForm = ({ rooms, startingPrice }) => {
             />
           </div>
         </div>
-        <div className="lg:self-end flex-1">
+        <div className="flex-1">
           <button className="w-full ">Book Now</button>
         </div>
       </form>
-      <div className="mt-8 items-center  flex   gap-3 min-w-[200px]">
-        <strong>
-          {nights ? `Price for ${nights} nights:` : "Add dates for prices"}
-        </strong>
-        <p>
-          <span className="font-bold text-2xl">
-            {nights ? `${nights * pricePerNight} € total` : ""}
-          </span>
-        </p>
-      </div>
-      <p className="mt-4">{pricePerNight} € per night </p>
     </section>
   );
 };

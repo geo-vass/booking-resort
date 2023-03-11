@@ -19,7 +19,7 @@ const Contact = () => {
           />
         </div>
         <form className="w-full" onSubmit={(e) => e.preventDefault()}>
-          <div className="flex flex-col gap-5 h-full space-between">
+          <div className="flex flex-col gap-5 h-full justify-between">
             <div className="flex flex-col">
               <label htmlFor="name">Name</label>
               <input type="text" id="name" required />
