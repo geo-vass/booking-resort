@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <footer className=" bg-gray-700/80 text-white rounded-sm  md:px-6 md:py-8 dark:bg-gray-500 mt-6 p-4  m-auto w-full  gap-2 relative z-10">
+    <footer className=" bg-blue-900 text-white rounded-sm  md:px-6 md:py-8 dark:bg-gray-500 mt-6 p-4  m-auto w-full  gap-2 relative z-10">
       <div className="sm:flex sm:items-center sm:justify-between  items-center max-w-[1140px] mx-auto">
         <Link to="/" className="flex gap-4">
           <FaUmbrellaBeach size={30} className="" />

@@ -67,10 +67,10 @@ const BookingForm = ({ rooms, startingPrice }) => {
           </span>
         </p>
       </div>
-      <p className="mb-6 text-sm text-gray-500">{pricePerNight} € per night </p>
+      <p className="mb-4 text-sm text-gray-500">{pricePerNight} € per night </p>
       <form
         onSubmit={(e) => e.preventDefault()}
-        className="flex flex-col  gap-6 mx-auto w-full "
+        className="flex flex-col  gap-6 mx-auto w-full text-sm "
       >
         <div className="flex flex-col ">
           <label htmlFor="room">Available Rooms:</label>

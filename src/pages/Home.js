@@ -11,12 +11,12 @@ const Home = () => {
   return (
     <div>
       <Hero />
-      <div className="p-4 max-w-[1140px] m-auto w-full  gap-2 relative z-10">
+      <div className="max-w-[1140px] m-auto w-full gap-2 px-4 pt-8 relative z-10">
         <Rooms rooms={rooms} />
-        <div className="flex flex-col md:flex-row p-4 max-w-[1140px] m-auto w-full  gap-4 ">
-          <About />
-          <BookingForm rooms={rooms} />
-        </div>
+      </div>
+      <div className="flex flex-col md:flex-row max-w-[1140px] m-auto w-full px-4 gap-4  z-10">
+        <About />
+        <BookingForm rooms={rooms} />
       </div>
     </div>
   );

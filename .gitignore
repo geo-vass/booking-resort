@@ -23,3 +23,7 @@ yarn-debug.log*
 yarn-error.log*
 
 npx json-server --watch src/db.json
+
+Hamburger menu
+Tab Icon
+Deployment

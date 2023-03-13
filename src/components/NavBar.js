@@ -8,7 +8,7 @@ const NavBar = () => {
   const [nav, setNav] = useState(false);
 
   return (
-    <section className="flex justify-between w-full px-4 py-2 min-h-[50px] items-center bg-gray-700/80 text-white ">
+    <section className="flex justify-between w-full px-4 py-2 min-h-[50px] items-center  bg-blue-900	 text-white ">
       {/* Main nav */}
       <ul className="hidden md:flex gap-5 ">
         <li>
