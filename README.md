@@ -1,4 +1,4 @@
-#Booking Resort
+# Booking Resort
 Created with create-react-app
 
 ## Info
