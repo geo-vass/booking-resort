@@ -14,14 +14,12 @@ const NavBar = () => {
         <li>
           <Link to="/">Home</Link>
         </li>
-        <li>
-          <Link to="/gallery">Gallery</Link>
-        </li>
+
         <li>
           <Link to="/#rooms">Rooms</Link>
         </li>
         <li>
-          <Link to="/contact">Contact</Link>
+          <Link to="/contact#contact">Contact</Link>
         </li>
       </ul>
       {/* Social Icons */}
@@ -52,16 +50,25 @@ const NavBar = () => {
         />
         <ul className="flex flex-col items-center just gap-10">
           <li>
-            <a href="/">Home</a>
+            <Link to="/" onClick={() => setNav(false)}>
+              Home
+            </Link>
           </li>
           <li>
-            <a href="#gallery">Gallery</a>
+            <Link to="/#rooms" onClick={() => setNav(false)}>
+              Rooms
+            </Link>
+          </li>
+
+          <li>
+            <Link to="/#deals" onClick={() => setNav(false)}>
+              Book Now
+            </Link>
           </li>
           <li>
-            <a href="#deals">Deals</a>
-          </li>
-          <li>
-            <a href="#contact">Contact</a>
+            <Link to="/contact" onClick={() => setNav(false)}>
+              Contact
+            </Link>
           </li>
         </ul>
       </div>

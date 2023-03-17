@@ -27,8 +27,12 @@ const Footer = () => {
             </a>
           </li>
           <li>
-            <a href="#" className="mr-4 hover:underline md:mr-6 ">
-              Licensing
+            <a
+              href="https://facebook.com"
+              target="_blank"
+              className="mr-4 hover:underline md:mr-6"
+            >
+              Like us
             </a>
           </li>
           <li>

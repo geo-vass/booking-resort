@@ -3,7 +3,7 @@ import TopBar from "./components/TopBar";
 import NavBar from "./components/NavBar";
 import Footer from "./components/Footer";
 import ScrollToTop from "./components/ScrollToTop";
-import Gallery from "./pages/Gallery";
+
 import Contact from "./pages/Contact";
 import Home from "./pages/Home";
 import RoomDetails from "./pages/RoomDetails";
@@ -21,7 +21,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/contact" element={<Contact />} />
-            <Route path="/gallery" element={<Gallery />} />
+
             <Route path="/rooms/:id" element={<RoomDetails />} />
           </Routes>
         </ScrollToTop>

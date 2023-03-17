@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { useParams } from "react-router-dom";
-import { rooms } from "../data";
 import { useFetch } from "../hooks/useFetch";
 import BookingForm from "../components/BookingForm";
 import Gallery from "./Gallery";

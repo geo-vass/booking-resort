@@ -21,7 +21,7 @@ const Amenities = ({ amenities }) => {
       </div>
       <div className="mt-4 text-right p-4">
         <a
-          className="text-sm  text-gray-600 cursor-pointer hover:underline"
+          className="text-sm  text-blue-600  cursor-pointer hover:underline"
           onClick={() => setshowMore(!showMore)}
         >
           {showMore ? `Show less...` : "Show more..."}
