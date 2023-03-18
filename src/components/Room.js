@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 const Room = ({ id, title, img, guests, space, startingPrice }) => {
   return (
-    <article className="relative mx-auto cursor-pointer mb-4 w-full overflow-hidden room">
+    <article className="relative mx-auto cursor-pointer mb-4 w-full overflow-hidden  room">
       <Link to={`/rooms/${id}`}>
         <div className="text-white absolute z-10 bg-slate-900/40 text-center p-2">
           <p>from {startingPrice} € per night</p>
