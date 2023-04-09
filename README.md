@@ -8,5 +8,3 @@ Created with create-react-app
 3. Booking form with pricing
 4. Tailwind CSS for styling
 
-## Live site
-https://booking-resort.netlify.app/
